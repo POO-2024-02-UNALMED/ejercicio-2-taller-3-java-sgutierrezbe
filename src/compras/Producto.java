@@ -4,8 +4,8 @@ public class Producto {
     
     private final int codigo;
     private String nombre;
-    private String tipo;
-    private  static int totalProductosPedidos;
+    public String tipo;
+    public  static int totalProductosPedidos;
 
     public Producto(int codigo, String nombre, String tipo) {
         this.codigo = codigo;

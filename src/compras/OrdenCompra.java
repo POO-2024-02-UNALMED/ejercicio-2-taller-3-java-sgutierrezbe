@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class OrdenCompra {
 
-    private int codigo;
+    public int codigo;
     private String tipo;
     private  Empleado comprador;
     private ArrayList<Producto> productos;
@@ -34,10 +34,10 @@ public class OrdenCompra {
     }
 
     private void retirarProducto(Producto producto) {
-        for (int i = 0; i < **; i++) {
+        for (int i = 0; i < productos.size(); i++) {
             if (producto.getCodigo() == productos.get(i).getCodigo()) {
                 productos.remove(i);
-                producto.totalProductosPedidos--;
+                Producto.totalProductosPedidos--;
                 producto.imprimirNombre();
                 System.out.println(" retirado");
                 break;
