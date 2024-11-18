@@ -3,7 +3,7 @@ package compras;
 import gestionHumana.Empleado;
 import java.util.ArrayList;
 
-public class OrdenCompra {
+public class OrdenCompra   {
 
     public int codigo;
     private String tipo;
