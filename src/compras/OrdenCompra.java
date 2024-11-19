@@ -1,10 +1,10 @@
 package compras;
-
+//importa el paquete de gestionHumana
 import gestionHumana.Empleado;
 import java.util.ArrayList;
-
+//se nombra la clase OrdenCompra
 public class OrdenCompra   {
-
+//se declaran los accesos de los atributos de la clase, todos privados menos el codigo
     public int codigo;
     private String tipo;
     private  Empleado comprador;
@@ -18,7 +18,7 @@ public class OrdenCompra   {
         this.productos = productos;
         Producto.totalProductosPedidos += productos.size();
     }
-
+//se asigna public ya que es un metodo
     public void agregarProducto(Producto producto) {
         if (producto.tipo.equals(tipo)) {
             productos.add(producto);
@@ -44,7 +44,7 @@ public class OrdenCompra   {
             }
         }
     }
-
+//se rellena con void ya que no retorna nada, sino que realiza un proceso
     public void descontar() {
         Producto.totalProductosPedidos -= productos.size();
     }
